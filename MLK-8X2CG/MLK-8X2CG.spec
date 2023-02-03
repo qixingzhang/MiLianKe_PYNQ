@@ -3,4 +3,4 @@ BSP_MLK-8X2CG := MLK-8X2CG.bsp
 BITSTREAM_MLK-8X2CG := system.bit
 FPGA_MANAGER_MLK-8X2CG := 1
 
-STAGE4_PACKAGES_Pynq-Z1 := xrt pynq ethernet
+STAGE4_PACKAGES_MLK-8X2CG := xrt pynq ethernet
