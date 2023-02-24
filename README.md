@@ -138,37 +138,20 @@ Intructions on building PYNQ 3.0.1 image for MiLianKe 8X2CG
     Trying to load boot images from mmc1
     23187200 bytes read in 1519 ms (14.6 MiB/s)
     ## Loading kernel from FIT Image at 10000000 ...
-    Using 'conf-1' configuration
-    Trying 'kernel-0' kernel subimage
-        Description:  Linux Kernel
-        Created:      2023-02-03   9:29:13 UTC
-        Type:         Kernel Image
-        Compression:  uncompressed
-        Data Start:   0x100000d4
-        Data Size:    23147008 Bytes = 22.1 MiB
-        Architecture: AArch64
-        OS:           Linux
-        Load Address: 0x00080000
-        Entry Point:  0x00080000
-        Hash algo:    sha1
-        Hash value:   59f220f3e2470fe145abaaccdfea913faf9d9de7
-    Verifying Hash Integrity ... sha1+ OK
-    ## Loading fdt from FIT Image at 10000000 ...
-    Using 'conf-1' configuration
-    Trying 'fdt-0' fdt subimage
-        Description:  Flattened Device Tree blob
-        Created:      2023-02-03   9:29:13 UTC
-        Type:         Flat Device Tree
-        Compression:  uncompressed
-        Data Start:   0x116133cc
-        Data Size:    38367 Bytes = 37.5 KiB
-        Architecture: AArch64
-        Hash algo:    sha1
-        Hash value:   345ae7f7d6c499f86164efe152a9811556045ee7
-    Verifying Hash Integrity ... sha1+ OK
-    Booting using the fdt blob at 0x116133cc
-    Loading Kernel Image
-    Loading Device Tree to 000000003fef3000, end 000000003feff5de ... OK
-
-    Starting kernel ...
     ```
+    ...
+    ```
+    PYNQ Linux, based on Ubuntu 22.04 pynq ttyPS0
+
+    pynq login: xilinx (automatic login)
+
+    Welcome to PYNQ Linux, based on Ubuntu 22.04 (GNU/Linux 5.15.19-xilinx-v2022.1 aarch64)
+
+    Last login: Thu Dec  8 08:32:05 UTC 2022 on ttyPS0
+    To run a command as administrator (user "root"), use "sudo <command>".
+    See "man sudo_root" for details.
+
+    xilinx@pynq:~$ 
+    ```
+* You can connect a ethernet cable to the board and access jupyter through web browser. The default password is `xilinx`.
+    
