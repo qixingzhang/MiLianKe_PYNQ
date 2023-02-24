@@ -37,7 +37,7 @@ Intructions on building PYNQ 3.0.1 image for MiLianKe 8X2CG
     ```
     Save and Exit the configuration menu.
 
-* Modify the Device-tree
+* Modify the device-tree
 
     Open the file `project-spec/meta-user/recipes-bsp/device-tree/files/system-user.dtsi` and replace with bellow content.
     ```c
@@ -81,9 +81,9 @@ Intructions on building PYNQ 3.0.1 image for MiLianKe 8X2CG
     * Download the RootFS: [https://bit.ly/pynq_aarch64_v3_0_1](https://bit.ly/pynq_aarch64_v3_0_1)
     * Download the SDIST: [https://bit.ly/pynq_sdist_v3_0_1](https://bit.ly/pynq_sdist_v3_0_1)
 
-* Run make
+* Run make. Replace the field `<path>` with the real path of RootFS and SDIST.
     ```bash
     cd sdbuild
-    make BOARDS=MLK-8X2CG PYNQ_ROOTFS=jammy.aarch64.3.0.1.tar.gz PYNQ_SDIST=pynq-3.0.1.tar.gz
+    make BOARDS=MLK-8X2CG PYNQ_ROOTFS=<path>/jammy.aarch64.3.0.1.tar.gz PYNQ_SDIST=<path>/pynq-3.0.1.tar.gz
     ```
     When finish, the SD card image is located in `output` folder.
